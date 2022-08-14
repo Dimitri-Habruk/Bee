@@ -1,0 +1,55 @@
+<form class="form" method="POST" action="send.php">
+    <div class="form-block closed" id="fb-1" style="display: block;">
+        <div class="form-text">1.  property address</div>
+        <input class="form-input" type="text" name="address" placeholder="Enter property address..." onfocus="this.className='form-input focus'" onblur="this.className='form-input'" required="">
+        <p class="input-text">564</p>
+        <div class="form-mistake" style="display: none;">Please fill in the data</div>
+    </div>
+    <div class="form-block closed" id="fb-2" style="display: block;">
+        <div class="form-text">2.  Name</div>
+        <div class="content-flex">
+            <input class="form-input w-348 i-1" name="First_name" type="text" placeholder="First name" onfocus="this.className='form-input w-348 i-1 focus'" onblur="this.className='form-input w-348 i-1'" required="">
+            <input class="form-input w-348 i-2" name="Last_name" type="text" placeholder="Last Name" onfocus="this.className='form-input w-348 i-2 focus'" onblur="this.className='form-input w-348 i-2'" required="">
+        </div>
+        <p class="input-text">964896 645</p>
+        <div class="form-mistake" style="display: none;">Please fill in the data</div>
+    </div>
+    <div class="form-block closed" id="fb-3" style="display: block;">
+        <div class="form-text">3.  Phone</div>
+        <input class="form-input" type="tel" name="telephone" maxlength="10" placeholder="(XXX) XXX-XXXX" onfocus="this.className='form-input focus'" onblur="this.className='form-input'" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" required="">
+        <p class="input-text">+1 1111111111</p>
+        <div class="form-mistake" style="display: none;">Please fill in the data</div>
+    </div>
+    <div class="form-block closed" id="fb-4" style="display: block;">
+        <div class="form-text">4.  Email</div>
+        <input class="form-input" name="email" type="email" placeholder="YourEmail@gmail.com" onfocus="this.className='form-input focus'" onblur="this.className='form-input'" required="">
+        <p class="input-text">yadpkjjpica9798@kahase.com</p>
+        <div class="form-mistake" style="display: none;">Please fill in the data</div>
+    </div>
+    <div class="form-block" id="fb-5" style="display: block;">
+        <div class="form-text"><strong>5. </strong>In a few words, tell us about your situation.</div>
+        <textarea class="form-input" name="comment" id="" cols="30" rows="10" onfocus="this.className='form-input focus'" onblur="this.className='form-input'"></textarea>
+        <p class="input-text"></p>
+        <div class="form-mistake" style="color: #d0021b;">Please fill in the data</div>
+    </div>
+    <div class="btn_block">
+        <button class="btn-prev" type="button" style="display: block;">
+            <svg style="transform:rotate(180deg);" width="23" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.819 10.239h15.752l-4.559 4.558c-.59.59-.59 1.535 0 2.101.284.283.662.425 1.063.425.402 0 .78-.165 1.063-.448l7.085-7.109c.59-.59.59-1.535 0-2.101L15.138.555a1.481 1.481 0 0 0-1.063-.424c-.401 0-.78.142-1.063.425a1.503 1.503 0 0 0-.448 1.063c0 .4.165.78.425 1.062l4.581 4.581H1.82C.992 7.262.33 7.924.33 8.75c0 .827.661 1.489 1.488 1.489z" fill="currentColor"></path>
+            </svg>
+        </button>
+        <button class="btn-next" type="button" style="display: none;">
+            <span>Next</span>
+            <svg width="23" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.819 10.239h15.752l-4.559 4.558c-.59.59-.59 1.535 0 2.101.284.283.662.425 1.063.425.402 0 .78-.165 1.063-.448l7.085-7.109c.59-.59.59-1.535 0-2.101L15.138.555a1.481 1.481 0 0 0-1.063-.424c-.401 0-.78.142-1.063.425a1.503 1.503 0 0 0-.448 1.063c0 .4.165.78.425 1.062l4.581 4.581H1.82C.992 7.262.33 7.924.33 8.75c0 .827.661 1.489 1.488 1.489z" fill="currentColor"></path>
+            </svg>
+        </button>
+        <button class="btn-submit" type="submit" style="display: block;">
+            <svg style="margin-right: 10px; margin-top: 3px" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.548158 9.82537C-0.208884 10.223 -0.177624 10.8051 0.616126 11.1191L2.96853 12.0504C3.76307 12.366 4.96542 12.1941 5.63954 11.6683L15.8568 3.61052C16.5286 3.0824 16.6005 3.16052 16.0169 3.78474L7.9403 12.4294C7.35514 13.052 7.5278 13.8169 8.32546 14.1247L8.60124 14.2317C9.3989 14.5403 10.698 15.0575 11.4902 15.3802L14.0996 16.4427C14.8926 16.7645 15.7395 16.3848 15.9645 15.5598L19.9411 0.941803C20.1653 0.116802 19.7294 -0.233199 18.9723 0.163682L0.548158 9.82537Z" fill="white"></path>
+                <path d="M7.00529 19.3951C6.9592 19.5342 8.61467 16.9983 8.61467 16.9983C9.08263 16.2835 8.81701 15.4304 8.02639 15.1069L6.22093 14.3679C5.43031 14.0444 5.05139 14.4241 5.37875 15.214C5.37718 15.2148 7.05297 19.2522 7.00531 19.3952L7.00529 19.3951Z" fill="white"></path>
+                </svg>
+            <span>Submit</span>
+        </button>
+    </div>
+</form>
